@@ -1,0 +1,34 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+rankdir=LR ;
+0 [label="diastolic <= 72.5\nsamples = 100.0%\nvalue = [0.5, 0.5]"] ;
+1 [label="systolic <= 112.5\nsamples = 62.1%\nvalue = [0.7, 0.3]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+2 [label="diastolic <= 60.5\nsamples = 41.6%\nvalue = [0.8, 0.2]"] ;
+1 -> 2 ;
+3 [label="samples = 13.8%\nvalue = [0.9, 0.1]"] ;
+2 -> 3 ;
+4 [label="samples = 27.7%\nvalue = [0.7, 0.3]"] ;
+2 -> 4 ;
+5 [label="race_hispanic <= 0.5\nsamples = 20.5%\nvalue = [0.4, 0.6]"] ;
+1 -> 5 ;
+6 [label="samples = 19.5%\nvalue = [0.4, 0.6]"] ;
+5 -> 6 ;
+7 [label="samples = 1.1%\nvalue = [1.0, 0.0]"] ;
+5 -> 7 ;
+8 [label="race_other <= 0.5\nsamples = 37.9%\nvalue = [0.3, 0.7]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=45, headlabel="False"] ;
+9 [label="ssqmean <= 7.0\nsamples = 35.2%\nvalue = [0.2, 0.8]"] ;
+8 -> 9 ;
+10 [label="samples = 30.7%\nvalue = [0.2, 0.8]"] ;
+9 -> 10 ;
+11 [label="samples = 4.5%\nvalue = [0.5, 0.5]"] ;
+9 -> 11 ;
+12 [label="diastolic <= 88.5\nsamples = 2.7%\nvalue = [0.7, 0.3]"] ;
+8 -> 12 ;
+13 [label="samples = 2.2%\nvalue = [0.9, 0.1]"] ;
+12 -> 13 ;
+14 [label="samples = 0.5%\nvalue = [0.2, 0.8]"] ;
+12 -> 14 ;
+}
